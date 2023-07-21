@@ -91,4 +91,5 @@ We welcome contributions from the community to improve this BookMyShow Clone app
 
 The BookMyShow Clone application is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as per the terms of the license.
 
+
 Happy movie booking! 🍿🎬

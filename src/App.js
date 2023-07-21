@@ -25,6 +25,8 @@ function App() {
       dispatch(adminActions.login());
     }
   }, [dispatch]);
+
+  
   return (
     <div>
       <Header />

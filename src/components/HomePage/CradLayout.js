@@ -12,8 +12,8 @@ const CradLayout = ({ title, description, releaseDate, posterUrl, id }) => {
   return (
     <Card
       sx={{
-        width: 250,
-        height: 320,
+        width: 300,
+        height: 350,
         borderRadius: 5,
         ":hover": {
           boxShadow: "10px 10px 20px #ccc",

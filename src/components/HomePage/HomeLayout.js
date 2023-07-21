@@ -16,7 +16,7 @@ const HomeLayout = () => {
     <Box width="100%" height="100vh" marginTop={2} margin="auto">
       <Box margin={"auto"} width="80%" height="40%" padding={2} display="flex">
         <img
-          src="https://i.ytimg.com/vi/yEinBUJG2RI/maxresdefault.jpg"
+          src="https://filmymantra.com/wp-content/uploads/2019/12/Poster-2.jpg"
           alt="Rocketry"
           width="100%"
           height="100%"

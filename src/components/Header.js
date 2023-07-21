@@ -9,6 +9,7 @@ import {
   Toolbar,
 } from "@mui/material";
 import MovieIcon from "@mui/icons-material/Movie";
+import LiveTvIcon from '@mui/icons-material/LiveTv';
 import { Box } from "@mui/system";
 import { getAllMovies } from "../api-helpers/api-helpers";
 import { Link, useNavigate } from "react-router-dom";
@@ -37,11 +38,11 @@ const Header = () => {
     }
   };
   return (
-    <AppBar position="sticky" sx={{ bgcolor: "#2b2d42" }}>
+    <AppBar position="sticky" sx={{ bgcolor: "#660065" }}>
       <Toolbar>
         <Box width={"20%"}>
           <IconButton LinkComponent={Link} to="/">
-            <MovieIcon />
+            <LiveTvIcon />
           </IconButton>
         </Box>
         <Box width={"30%"} margin="auto">
@@ -51,7 +52,7 @@ const Header = () => {
             options={movies && movies.map((option) => option.title)}
             renderInput={(params) => (
               <TextField
-                sx={{ input: { color: "white" } }}
+                sx={{ input: { color: "white"} }}
                 variant="standard"
                 {...params}
                 placeholder="Search Acroos Multiple Movies"

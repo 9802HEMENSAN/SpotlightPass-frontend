@@ -13,15 +13,15 @@ const MovieItem = ({ title, releaseDate, posterUrl, id }) => {
     <Card
       sx={{
         margin: 2,
-        width: 250,
-        height: 320,
+        width: [250, 320, 350],
+        height: [320, 350, 350],
         borderRadius: 5,
         ":hover": {
           boxShadow: "10px 10px 20px #ccc",
         },
       }}
     >
-      <img height={"50%"} width="100%" src={posterUrl} alt={title} />
+      <img height={"60%"} width="100%" src={posterUrl} alt={title} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {title}
@@ -38,9 +38,9 @@ const MovieItem = ({ title, releaseDate, posterUrl, id }) => {
           to={`/booking/${id}`}
           sx={{
             margin: "auto",
-            bgcolor: "#2b2d42",
+            bgcolor: "#660066",
             ":hover": {
-              bgcolor: "#121217",
+              bgcolor: "#660077",
             },
           }}
           size="small"

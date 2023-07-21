@@ -17,7 +17,7 @@ const Movies = () => {
         variant="h4"
         padding={2}
         width="40%"
-        bgcolor={"#900C3F"}
+        bgcolor={"#660066"}
         color="white"
         textAlign={"center"}
       >
@@ -27,9 +27,9 @@ const Movies = () => {
         width={"100%"}
         margin="auto"
         marginTop={5}
-        display={"flex"}
-        justifyContent="flex-start"
-        flexWrap={"wrap"}
+        display={"grid"}
+        justifyContent="space-around"
+        gridTemplateColumns={["repeat(1, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]}
       >
         {movies &&
           movies.map((movie, index) => (

@@ -11,6 +11,7 @@ const AllMovies = () => {
       .then((data) => setMovies(data))
       .catch((err) => console.log(err));
   }, []);
+
   return (
     <Box margin="auto" marginTop={4}>
       <Typography variant="h4" padding={2} textAlign="center">
@@ -19,9 +20,9 @@ const AllMovies = () => {
       <Box
         margin="auto"
         width="100%"
-        display={"flex"}
+        display={"grid"}
+        gridTemplateColumns={"repeat(4, 1fr)"}
         justifyContent="center"
-        flexWrap={"wrap"}
         gap={4}
       >
         {movies &&

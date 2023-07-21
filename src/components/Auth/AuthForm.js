@@ -8,9 +8,11 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { Link } from "react-router-dom";
 const labelStyle = { mt: 1, mb: 1 };
+
 const AuthForm = ({ onSubmit, isAdmin }) => {
   const [inputs, setInputs] = useState({
     name: "",
@@ -26,7 +28,13 @@ const AuthForm = ({ onSubmit, isAdmin }) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({ inputs, signup: isAdmin ? false : isSignup });
+    onSubmit({ inputs, signup: isAdmin ? false : isSignup })
+    .then(()=>{
+      Swal.fire({ icon: "success", title: "Success", text: "Login Successfully" });
+    }).catch((err)=>{
+      Swal.fire({ icon: "success", title: "Success", text: "Login Successfully" });
+    })
+    
   };
   return (
     <Dialog PaperProps={{ style: { borderRadius: 20 } }} open={true}>

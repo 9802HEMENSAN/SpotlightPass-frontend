@@ -13,9 +13,9 @@ const HomePage = () => {
   }, []);
   return (
     <Box width={"100%"} height="100%" margin="auto" marginTop={2}>
-      <Box margin={"auto"} width="80%" height={"40vh"} padding={2}>
+      <Box margin={"auto"} width="80%" height={"80vh"} padding={2}>
         <img
-          src="https://i.ytimg.com/vi/bweRG6WueuM/maxresdefault.jpg"
+          src="https://filmymantra.com/wp-content/uploads/2019/12/Poster-2.jpg"
           alt="Brahmastra"
           width={"100%"}
           height={"100%"}
@@ -36,7 +36,7 @@ const HomePage = () => {
       >
         {movies &&
           movies
-            .slice(0, 4)
+            .slice(4, 7)
             .map((movie, index) => (
               <MovieItem
                 id={movie.id}

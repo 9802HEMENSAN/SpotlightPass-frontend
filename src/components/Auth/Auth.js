@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { sendUserAuthRequest } from "../../api-helpers/api-helpers";
 import { userActions } from "../../store";
 import AuthForm from "./AuthForm";
+import Swal from "sweetalert2";
 
 const Auth = () => {
   const navigate = useNavigate();
