@@ -10,6 +10,7 @@ const AdminProfile = () => {
       .then((res) => setAdmin(res.admin))
       .catch((err) => console.log(err));
   }, []);
+  
   return (
     <Box width={"100%"} display="flex">
       <Fragment>

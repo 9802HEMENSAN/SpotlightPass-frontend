@@ -65,7 +65,7 @@ const User = () => {
               bookings.map((booking, index) => (
                 <ListItem
                   sx={{
-                    bgcolor: "#00d386",
+                    bgcolor: "blue",
                     color: "white",
                     textAlign: "center",
                     margin: 1,
