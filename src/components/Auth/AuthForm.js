@@ -30,9 +30,9 @@ const AuthForm = ({ onSubmit, isAdmin }) => {
     e.preventDefault();
     onSubmit({ inputs, signup: isAdmin ? false : isSignup })
     .then(()=>{
-      Swal.fire({ icon: "success", title: "Success", text: "Login Successfully" });
+      Swal.fire("Good job!", "Signup Successfull", "success");
     }).catch((err)=>{
-      Swal.fire({ icon: "success", title: "Success", text: "Login Successfully" });
+      Swal.fire("Oops", "Signup Failed !!", "error");
     })
     
   };

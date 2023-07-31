@@ -1,6 +1,6 @@
 # Book My Show Clone - Frontend Application
 
-Welcome to the official README file for the Book My Show Clone Frontend Application! This web application is a fully functional and dynamic platform that allows users to explore and book movies from a vast collection of Indian Bollywood cinema. Additionally, it enables administrators to manage the movie database by adding, updating, and deleting movie listings.
+*** Welcome to the official README file for the Book My Show Clone Frontend Application! This web application is a fully functional and dynamic platform that allows users to explore and book movies from a vast collection of Indian Bollywood cinema. Additionally, it enables administrators to manage the movie database by adding, updating, and deleting movie listings.
 
 ## Tech Stack
 
